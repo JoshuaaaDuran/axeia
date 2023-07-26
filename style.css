@@ -773,7 +773,7 @@ hr {
 .loan-details td,
 .billing-details td,
 .pay-table td {
-  border: 1px solid lightgrey;
+  border: 1px solid transparent;
   padding: 10px 30px;
   font-size: 15px;
 }
