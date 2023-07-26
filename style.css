@@ -677,14 +677,10 @@ input {
   text-align: left;
   color: #024685;
 }
-table{
+table, th, td{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-.table-bordered {
-border: 1px solid #f3eeee !important;
+  border: 1px solid white;
 }
 
 table caption {
@@ -699,6 +695,7 @@ hr {
   width: 100%;
   display: flex;
   justify-content: center;
+  border: 1px solid transparent;
 }
 
 .ppt-cont >div {
