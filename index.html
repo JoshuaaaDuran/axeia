@@ -1,181 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Section Login Form</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins" , sans-serif;
+    }
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    .container{
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    perspective: 2700px;
+    }
+    .container .cover{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    }
 
-        <link rel="stylesheet" href="style.css">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <title>AXEIA</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav>
-                <div class="nav-bar">
-                    <i class='bx bx-menu sidebarOpen' ></i>
-                    <span class="logo navLogo"><a href="#">
-                        <img src="img/logo-frontend-header-small.png" alt="">
-                    </a></span>
-        
-                    <div class="menu">
-                        <div class="logo-toggle">
-                            <span class="logo"><a href="#">
-                                <img src="img/logo-frontend-header-small.png" alt="">
-                            </a></span>
-                            <i class='bx bx-x siderbarClose'></i>
-                        </div>
-        
-                        <ul class="nav-links">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="profile.html">Profile</a></li>
-                            <li><a href="property.html">Property</a></li>
-                            <li><a href="payment.html">Payment</a></li>
-                            <li><a href="download.html">Forms</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!-- HOME PAGE -->
-            <section class="home home-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">We go beyond building homes. <br>
-                        <span class="home__title-color"> We build lives.</span>
-                        <br><br> Axeia Group of Companies.
-                    </h1>
-                </div>
-
-            </section>
-
-            <section class="scroll-reveal ans">
-                <h3 class="pro">Our Active Projects</h3>
-                <p class="section-lead">AXEIA offers affordable housing options in the Philippines, 
-                    making affordable homes and new heights of growth and progress available to every Filipino. 
-                    Today, AXEIA has several affordable housing projects in Cavite, Laguna, Batangas, Rizal, 
-                    Pampanga and Metro Manila. Our affordable homes ensure that accessibility, security, value, and 
-                    sustainability are within your family's reach. With AXEIA, we make sure that true happiness can 
-                    start here!</p>
-                <div class="services-grid">
-                  <div class="service service1">
-                    <img src="img/tpp-logo-regular.jpg" alt="">
-                    <div class="text">
-                        <h4>Php 1,452,000 - Php 4,132,000</h4>
-                        <h2>Tanauan Park Place</h2>
-                        <p>Brgy. Bagumbayan, Tanauan, Batangas</p>
-                        <a href="property.html" class="cta">Read More <span class="ti-angle-right"></a>
-                    </div>
-                  </div>
-              
-                  <div class="service service1">
-                    <img src="img/mdtforwebsite-regular.jpg" alt="">
-                    <div class="text">
-                        <h4>Php 2,800,000 - Php 3,000,000</h4>
-                        <h2>Midori Terraces</h2>
-                        <p>Brgy. San Roque, Antipolo, Rizal</p>
-                        <a href="property.html" class="cta">Read More <span class="ti-angle-right"></a>
-                    </div>
-                  </div>
-
-                  <div class="service service1">
-                    <img src="img/Cover-Logo-regular.jpg" alt="">
-                    <div class="text">
-                        <h4>Php 3,264,000 - Php 7,746,000</h4>
-                        <h2>One Tandang Sora</h2>
-                        <p c>353 Tandang Sora Avenue, Quezon City</p>
-                        <a href="property.html" class="cta">Read More <span class="ti-angle-right"></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service service1">
-                      <img src="img/WPP-Cover-Logo-regular.jpg" alt="">
-                      <div class="text">
-                          <h4>Php 633,000 - Php 1,702,000</h4>
-                          <h2>White Plains Porac</h2>
-                          <p>Brgy. Salu, Porac, Pampanga</p>
-                          <a href="property.html" class="cta">Read More <span class="ti-angle-right"></a>
-                      </div>
-                    </div>
-                
-                    <div class="service service1">
-                      <img src="img/GMR-regular.jpg" alt="">
-                      <div class="text">
-                          <h4>Php 633,000 - Php 1,569,000</h4>
-                          <h2>Greenmeadows</h2>
-                          <p>Brgy. Calansayan, San Jose, Batangas</p>
-                          <a href="property.html" class="cta">Read More <span class="ti-angle-right"></a>
-                      </div>
-                    </div>
-  
-                    <div class="service service1">
-                      <img src="img/wldtforwebsite-regular.jpg" alt="">
-                      <div class="text">
-                          <h4>Php 1,500,000 - Php 4,000,000</h4>
-                          <h2>Woodlands </h2>
-                          <p>Brgy. Hugo Perez, Trece Martires, Cavite</p>
-                          <a href="property.html" class="cta">Read More <span class="ti-angle-right"></a>
-                      </div>
-                    </div>
-                  </div>
-              </section>
-        </main>
-
-        <section class="scroll-reveal ans">
-        <section class="ans" >
-            <h3 class="h3-anno">Announcements</h3>
-            <p class="section-anno">AXEIA offers affordable housing options in the Philippines, 
-                making affordable homes and new heights of growth and progress available to every Filipino. 
-                </p>
-
-                <div class="container">
-                    <div class="column">
-                      <img src="img/Home-Loan-Saver-Program-large.jpg" alt="Image" class="image">
-                    </div>
-                    <div class="column">
-                      <p class="anno">
-                        <br>
-                        <span class="head">The Pag-IBIG Fund Home Saver Programs provide our Housing Loan borrowers with options to deal with missed payments.</span><br>
-                        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ipsum vitae turpis accumsan condimentum.
-                        Integer ultricies odio non sem maximus bibendum. Etiam id elit eu lectus maximus tincidunt. Sed eu lorem
-                        ac odio tristique varius. Sed pellentesque dui vel augue consequat lacinia. Aenean a nibh sit amet massa
-                        faucibus auctor.
-                      </p>
-                    </div>
-                  </div>
-        </section>
-    </section>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">AXEIA Group of Companies</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    .container .cover .front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    }
+    .container .cover::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 12;
+    }
+    .container .cover img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 10;
+    }
+    .container .cover .text{
+    position: absolute;
+    z-index: 130;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .cover .text .text-1,
+    .cover .text .text-2{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    }
+    .cover .text .text-2{
+    font-size: 15px;
+    font-weight: 500;
+    }
+    .container .forms{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    }
+    .container .form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .form-content .login-form{
+    width: calc(100% / 2 - 25px);
+    }
+    .forms .form-content .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    }
+    .forms .form-content .title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: #024685;
+    }
+    .forms .signup-form  .title:before{
+    width: 20px;
+    }
+    .forms .form-content .input-boxes{
+    margin-top: 30px;
+    }
+    .forms .form-content .input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+    }
+    .form-content .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    }
+    .form-content .input-box input:focus,
+    .form-content .input-box input:valid{
+    border-color: #024685;
+    }
+    .form-content .input-box i{
+    position: absolute;
+    color: #024685;
+    font-size: 17px;
+    }
+    .forms .form-content .text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    }
+    .forms .form-content .text a{
+    text-decoration: none;
+    }
+    .forms .form-content .text a:hover{
+    text-decoration: underline;
+    }
+    .forms .form-content .button{
+    color: #fff;
+    margin-top: 40px;
+    }
+    .forms .form-content .button input{
+    color: #fff;
+    background: #024685;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    }
+    .forms .form-content .button input:hover{
+    background: #024685;
+    }
+    .forms .form-content label{
+    color: #024685;
+    cursor: pointer;
+    }
+    .forms .form-content label:hover{
+    text-decoration: underline;
+    }
+    .forms .form-content .login-text,
+    .forms .form-content .sign-up-text{
+    text-align: center;
+    margin-top: 25px;
+    }
+    .container #flip{
+    display: none;
+    }
+    @media (max-width: 730px) {
+    .container .cover{
+        display: none;
+    }
+    .form-content .input-box input{
+    font-size: 13px;
+    font-weight: 400;
+    }
+    .container{
+        width: 95%;
+        height: 60%;
+    }
+    .form-content .login-form{
+        width: 100%;
+    }
+    .container #flip:checked ~ .forms .login-form{
+        display: none;
+    }
+    body{
+      background-image: url(img/login.jpeg);
+      background-size: contain; 
+      height: 300px;
+    }
+    }
+    a{
+      color: #024685;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cover">
+          <div class="front">
+            <img src="img/login.jpeg" alt="">
+            <div class="text">
+              <span class="text-1">We go beyond building homes <br> We build lives.</span><br>
+              <span class="text-2">AXEIA</span>
             </div>
-            <p class="footer__copy">&#169; All rights reserved</p>
-        </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="main.js"></script>
-        <script>
-            ScrollReveal().reveal('.scroll-reveal', {
-    distance: '50px',
-    duration: 1000,
-    easing: 'ease-in-out',
-    origin: 'bottom',
-    interval: 200,
-  });
+          </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+              <div class="login-form">
+                <div class="title">Login</div>
+                <form action="#" onsubmit="return validateForm()">
+                  <div class="input-boxes">
+                      <div class="input-box">
+                          <i class="fas fa-envelope"></i>
+                          <input type="text" id="username" placeholder="Enter your email" required>
+                      </div>
+                      <div class="input-box">
+                          <i class="fas fa-lock"></i>
+                          <input type="password" id="password" placeholder="Enter your password" required>
+                      </div>
+                      <div class="text"><a href="#">Forgot password?</a></div>
+                      <div class="button input-box">
+                          <input type="submit" value="Submit">
+                      </div>
+                  </div>
+              </form>
+        </div>
+        </div>
+      </div>
+      <script>
+        function validateForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const validUsername = 'admin';
+            const validPassword = 'admin';
+    
+            if (username === validUsername && password === validPassword) {
+            // Valid credentials, redirect to index.html
+            window.location.href = 'index.html';
+            return false; // Prevent form submission
+            } else {
+            // Invalid credentials, show error message
+            alert('Invalid username or password. Please try again.');
+            return false;
+        }
+        }
         </script>
-    </body>
+
+      <script src="main.js"></script>
+</body>
 </html>
