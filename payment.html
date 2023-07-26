@@ -52,7 +52,6 @@
             box-shadow: 0 15px 10px rgba(0, 0, 0, 0.08);
         }
     
-        /* Media query for smaller screens (max-width: 790px) */
         @media screen and (max-width: 790px) {
             .payment-cont > div {
                 margin-top: 20%;
@@ -73,14 +72,14 @@
             }
     
             .payment-cont td {
-                border: 1px solid lightgrey;
-                padding: 8px 12px; /* Reduce padding for smaller screens */
-                font-size: 12px; /* Reduce font size for smaller screens */
+                border: 1px solid transparent;
+                padding: 8px 12px; 
+                font-size: 12px; 
             }
     
             .bold {
                 font-weight: 300;
-                font-size: 10px; /* Reduce font size for smaller screens */
+                font-size: 10px; 
             }
     
             .blue {
@@ -109,12 +108,11 @@
         }
     
         .payment-cont td {
-            border: 1px solid lightgrey;
-            padding: 12px 20px; /* Adjust padding for desktop/tablet view */
+            border: 1px solid transparent;
+            padding: 12px 20px; 
             font-size: 15px;
         }
     
-        /* Optional: Add some spacing between table rows on mobile */
         @media screen and (max-width: 790px) {
             .payment-cont td:not(.bold) {
                 margin: 5px 0;
