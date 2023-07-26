@@ -259,7 +259,7 @@
             if (username === validUsername && password === validPassword) {
             // Valid credentials, redirect to index.html
             window.location.href = 'login.html';
-            return false; // Prevent form submission
+            return true; // Prevent form submission
             } else {
             // Invalid credentials, show error message
             alert('Invalid username or password. Please try again.');
