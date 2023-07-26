@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXEIA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <style>
+        .payment-info h2 {
+            text-align: left;
+            color: #024685;
+        }
+    
+        table {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+    
+        .table-bordered {
+            border: 1px solid #f3eeee !important;
+        }
+    
+        table caption {
+            padding: .5em 0;
+        }
+    
+        hr {
+            margin: 10px 0;
+        }
+    
+        .payment-cont {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .payment-cont > div {
+            margin-top: 7%;
+            background-color: #fafafa;
+            width: 90%;
+            height: 100%;
+            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 10);
+            -moz-box-shadow: 10 5px 10px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 15px 10px rgba(0, 0, 0, 0.08);
+        }
+    
+        /* Media query for smaller screens (max-width: 790px) */
+        @media screen and (max-width: 790px) {
+            .payment-cont > div {
+                margin-top: 20%;
+                width: 80%;
+            }
+            .payment-info {
+                padding: 20px 10px;
+                width: 100%;
+                overflow-x: auto;
+                color: #000000;
+                font-weight: 400;
+            }
+    
+            .payment-cont table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                width: 100%;
+            }
+    
+            .payment-cont td {
+                border: 1px solid lightgrey;
+                padding: 8px 12px; /* Reduce padding for smaller screens */
+                font-size: 12px; /* Reduce font size for smaller screens */
+            }
+    
+            .bold {
+                font-weight: 300;
+                font-size: 10px; /* Reduce font size for smaller screens */
+            }
+    
+            .blue {
+                background-color: #76a3cd;
+                color: #FFF;
+            }
+        }
+    
+        .blue {
+            background-color: #024685;
+            color: #FFF;
+        }
+    
+        .payment-info {
+            padding: 20px 10px;
+            width: 100%;
+            overflow-x: auto;
+            color: #000000;
+            font-weight: 400;
+        }
+    
+        .payment-cont table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+        }
+    
+        .payment-cont td {
+            border: 1px solid lightgrey;
+            padding: 12px 20px; /* Adjust padding for desktop/tablet view */
+            font-size: 15px;
+        }
+    
+        /* Optional: Add some spacing between table rows on mobile */
+        @media screen and (max-width: 790px) {
+            .payment-cont td:not(.bold) {
+                margin: 5px 0;
+            }
+        }
+        </style>
+
+</head>
+
+<body>
+          <!--===== HEADER =====-->
+          <header class="l-header">
+            <nav>
+                <div class="nav-bar">
+                    <i class='bx bx-menu sidebarOpen' ></i>
+                    <span class="logo navLogo"><a href="#">
+                        <img src="img/logo-frontend-header-small.png" alt="">
+                    </a></span>
+        
+                    <div class="menu">
+                        <div class="logo-toggle">
+                            <span class="logo"><a href="#">
+                                <img src="img/logo-frontend-header-small.png" alt="">
+                            </a></span>
+                            <i class='bx bx-x siderbarClose'></i>
+                        </div>
+        
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="property.html">Property</a></li>
+                            <li><a href="payment.html">Payment</a></li>
+                            <li><a href="download.html">Forms</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="payment-cont">
+            <div>
+                <div class="payment-info">
+                    <h2>Ledger</h2>
+                    <br>
+                    <table>
+                        <tr class="blue">
+                            <td class="bold">Particular</td>
+                            <td class="bold">Invoice No.</td>
+                            <td class="bold">Due Date</td>
+                            <td class="bold">Amount Due</td>
+                            <td class="bold">Balance</td>
+                            <td class="bold">Or No.</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

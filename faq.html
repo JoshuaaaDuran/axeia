@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <title>FAQ</title>
+  <style>
+
+    div + div {
+      clear: both;
+    }
+    
+
+    p {
+      line-height: 1.4em;
+      color: #494747;
+    }
+
+    .faq-title {
+      font-size: 2em;
+      margin: 0.4em 0;
+    }
+
+    div.seperator {
+      width: 7.5em;
+      height: 0.17em;
+      margin-left: -1.8em;
+    }
+
+    .faq-list > div {
+      border-bottom: 0.07em solid #ededed;
+      padding: 1.5em 0em;
+    }
+
+    .faq-list > div:last-child {
+      border: unset;
+    }
+
+    details > summary {
+      list-style: none;
+    }
+
+    summary {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: all 0.3s ease;
+    }
+
+    summary:hover
+    {
+      color:#024685;
+    }
+    .ques:hover{
+      color:#024685;
+    }
+
+    .space{
+      margin-left: 5%;
+    }
+
+    details summary::before {
+      content: "+";
+      font-size: 1.4em;
+      font-weight: bold;
+      float: right;
+      margin-right: 0.5em;
+      transition: transform 0.3s ease;
+      color: #05adc3;
+    }
+
+    details[open] summary::before {
+      content: "-";
+      transform: rotate(45deg);
+    }
+
+    details[open] details summary::before {
+      content: "+";
+      transform: none;
+    }
+
+    details[open] p {
+      border-left: 2px solid #024685;
+      margin-left: 55px;
+      padding-left: 25px;
+      opacity: 100;
+      transition: all 3s ease;
+    }
+
+    details[open] summary {
+      color: #000000;
+    }
+
+    details[open] summary::before {
+      transform: rotate(180deg);
+    }
+
+    .faq-body {
+      width: 70em;
+      margin: 4em auto;
+      border-radius: 0.2em;
+      padding: 5em;
+      background-color: #fff;
+    }
+
+    .faq-list {
+      width: 55em;
+      margin: 1em auto;
+      padding: 2em 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .faq-body {
+        width: 90%;
+        margin: 2em auto;
+        padding: 2em;
+        margin-top: 15%;
+      }
+
+      .faq-list {
+        width: 100%;
+      }
+
+      summary {
+        font-size: 1.0em;
+      }
+
+      details[open] p {
+        margin-left: 35px;
+        padding-left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+            <!--===== HEADER =====-->
+            <header class="l-header">
+              <nav>
+                  <div class="nav-bar">
+                      <i class='bx bx-menu sidebarOpen' ></i>
+                      <span class="logo navLogo"><a href="#">
+                          <img src="img/logo-frontend-header-small.png" alt="">
+                      </a></span>
+          
+                      <div class="menu">
+                          <div class="logo-toggle">
+                              <span class="logo"><a href="#">
+                                  <img src="img/logo-frontend-header-small.png" alt="">
+                              </a></span>
+                              <i class='bx bx-x siderbarClose'></i>
+                          </div>
+          
+                          <ul class="nav-links">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="profile.html">Profile</a></li>
+                              <li><a href="property.html">Property</a></li>
+                              <li><a href="payment.html">Payment</a></li>
+                              <li><a href="download.html">Forms</a></li>
+                              <li><a href="faq.html">FAQ</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </header>
+
+  <div id="faq" class="faq-body">
+    <div class="faq-header">
+      <h3 class="faq-title">FAQ's</h3>
+      <h4 >Quick answers to the questions you may have.</h4>
+      <div class="seperator"></div>
+    </div>
+
+    <div class="faq-list">
+      <div>
+        <details>
+          <summary title="Title">Reservation Documents</summary>
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Kung ako ay hiwalay sa asawa, maaari ba akong mag-avail ng housing loan?</summary>
+              <p class="faq-content">Oo. Dapat mayroong annulment papers na in-issue ng Korte. Recommended na may court decision na bago magreserve ng unit. Kung ang iyong annulment ay hindi pa na-file o di kaya filed na subalit di pa lumalabas ang desisyon ng korte in your favor, maaaring magsumite ng Special Power of Attorney issued ng iyong spouse na nagsasabingikaw ang Attorney-in-Fact na magpipirma para sa iyo. Subalit kung ang loan mo ay i-aapply mo sa bank, ang nasabing SPA ay pahihintulutan lamang kung ang iyong asawa ay nasa ibang bansa.</p>
+            </details>
+          </div>
+
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Paano kung kulang ang aking mga dokumento?</summary>
+              <p class="faq-content">Dapat kumpletuhin muna ang mga kailangang dokumento bago mag-reserve ng unit.</p>
+            </details>
+          </div>
+
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Maaari ko bang maging co-borrower ang aking kaibigan?</summary>
+              <p class="faq-content">Oo, as long as makapapasa sa Credit & Background Investigation na isasagawa ng Pag-IBIG o ng Bangko ang iyong kaibigan. Sa HDMF-Shaw,  bago ma-file ang housing loan, ikaw at ang iyong co-borrower ay dapat sumailalim muna sa advance Credit/Background Investigation at advance validation ng Pag-IBIG. Ang validation ay personal appearance sa HDMF para sa interview at orientation na kapwa niyo dapat daluhan ng sabay.</p>
+            </details>
+          </div>
+          
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Kung ako ay hindi na Filipino Citizen, maaari pa ba akong mag-apply ng housing loan?</summary>
+              <p class="faq-content">Ito ay maaari lamang sa mga natural born Filipinos na naturalized sa Foreign country at under lamang sa Bank Financing. Kailangan magsumite ng mga dokumento na kailangan ng bangko kung saan ipapasok ang iyong housing loan kagaya ng Consularized Oath of Allegiance (Affidavit na nagpapatunay na hindi mo dine-deny ang iyong Filipino Citizenship) o Affidavit on Land Ownership sa Pilipinas.</p>
+            </details>
+          </div>
+
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Kung ako ay may existing housing loan pa with HDMF, maaari pa ba akong mag-housing loan sa kanila?</summary>
+              <p class="faq-content">Oo, basta ang iyong current housing loan ay updated sa payment.  Bago mag-reserve, magtungo muna sa Pag-IBIG para magpa-compute kung magkano ang maaari mong ma-loan.</p>
+            </details>
+          </div>
+          
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Ano ang gagawin kung ang aking MSVS findings ay alin man sa mga sumusunod?</summary>
+              <p class="faq-content">No record found                -  Submit ESAV or Official receipt (OR) of lump sum payment
+                Upgrade Contribution        -   Submit OR of upgraded contribution
+                Less than 24 months        -   Submit ESAV or Official Receipt (OR) of payment lacking contribution
+                Status not updated          -   Submit Marriage Conbtract at corrected ESAV
+                Name with Discrepancy  -   Submit corrected ESAV/Birth Certificate or Marriage Certificate if married
+                With MPL not updated   -   Submit Updated Billing and Ledgering or Updated Official Receipt (OR) if paid</p>
+            </details>
+          </div>
+          
+        </details>
+      </div>
+
+      <div>
+        <details>
+          <summary title="Title">Construction and Move-in</summary>
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Kailan ico-construct ang aking bahay at gaano ito katagal?</summary>
+              <p class="faq-content">Based on Reservation Agreement, construction of unit will start:
+
+                1. Upon full payment of equity at iba pang required fees. Construction will be within the period of one (1) year. Halimbawa,  kung nabayaran na nang buo ang Equity on January 2018, ang target completion date ng kontsruksyon ay January 2019.
+                
+                2. Based on the construction schedule of our Project Manager on site.</p>
+            </details>
+          </div>
+
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Kailan ang target take-out ng aking nabiling bahay?</summary>
+              <p class="faq-content">Matapos makumpleto ang mga dokumento, updated ang payments at constructed na ang unit/s, then loan take-out will follow. The Loan Processing activity normally takes:
+
+                1. HDMF Financing:  2 to 3 months kung walang problema ang account
+                
+                2. Bank Financing: 1 month after submission of loan documents
+                
+                3. Deferred Cash at In-House Financing: 2-3 weeks (manggagaling sa buyer ang request letter  at subject for approval ng in-charged departments)</p>
+            </details>
+          </div>
+
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Kailan ang turn-over ng aking nabiling unit?</summary>
+              <p class="faq-content">HDMF o Bank Financing - Ang actual turnover ay magaganap matapos maaprubahan ang iyong loan at nakasaalang-alang sa kumpletong dokumentong naipasa, updated payments, ang unit ay ready for occupancy, at ang load ay apprubado na ng iyong napiling Financing.
+                Deferred Cash at Inhouse Financing - Kinakailangan na kumpleto ang mga dokumento, nakabayad na ng 24%, ang unit ay ready for occupancy at kailangan magbigay ng request letter for move in. Matapos maaprubahan ang request for move-in, ang buyer ay tatawagan kaagad para ipaalam ang schedule for unit inspection at move-in orientation.</p>
+            </details>
+          </div>
+          
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Kung ako ay hindi na Filipino Citizen, maaari pa ba akong mag-apply ng housing loan?</summary>
+              <p class="faq-content">Ito ay maaari lamang sa mga natural born Filipinos na naturalized sa Foreign country at under lamang sa Bank Financing. Kailangan magsumite ng mga dokumento na kailangan ng bangko kung saan ipapasok ang iyong housing loan kagaya ng Consularized Oath of Allegiance (Affidavit na nagpapatunay na hindi mo dine-deny ang iyong Filipino Citizenship) o Affidavit on Land Ownership sa Pilipinas.</p>
+            </details>
+          </div>
+
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Paano ang koneksyon ng kuryente at tubig?</summary>
+              <p class="faq-content">Sa mga projects na hindi pa direktang hawak ng local water district o EPMC/Spring Clear, magpo-provide ang Axeia ng temporary water and electricity connection. Sa mga projects naman na mayroon nang Meralco connection, tungkulin ng buyer na direktang mag-apply sa Meralco. Ang mga documents na galing sa Axeia katulad ng Contract to Sell (CTS), Copy of Title, and Certficate of Occupancy ay kailangan ipasa para sa pag-apply sa Meralco.</p>
+            </details>
+          </div>
+
+        </details>
+      </div>
+
+      <div>
+        <details>
+          <summary title="Title">Payment of Equity and Monthly Amortization</summary>
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Kailan ako magsisimulang magbayad ng aking monthly amortization (M.A.)?</summary>
+              <p class="faq-content">Ang pagbayad ng M.A. ay magsisimula at magtutuluy-tuloy matapos mabayaran ng buo ang Equity o Down Payment.</p>
+            </details>
+          </div>
+
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Paano ako makakakuha ng Statement of Account (SOA) at Official Receipt (OR)?</summary>
+              <p class="faq-content">Maaaring makuha ang SOA via e-mail (upon request only) o hard copy sa Credit Management Dept. Administrative Office.</p>
+            </details>
+          </div>
+
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Maaari bang magpabago ng petsa na nakatakdang pagbabayad (due date)?</summary>
+              <p class="faq-content">Oo. Tiyakin lamang na ang iyong account ay updated at nakapaghulog na ng pinakaunang bayad na itinakda sa iyong Reservation Agreement. Mag-submit ng request letter addressed sa Credit Management Department. Once approved, magbayad ng P500.00 processing fee. Ang anumang request sa kasalukuyang buwan ay applicable o epektibo sa susunod na buwan.</p>
+            </details>
+          </div>
+          
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Maaari ba akong magrequest na mabago ang aking payment term?</summary>
+              <p class="faq-content">a. Pagpapahaba ng payment term - Kailangan maaprubahan ang request letter bago magbayad ng kaukulang processing fee
+
+                na P1,000.00 upang maproseso ang request. Maaaring makuha ang approval sa loob ng tatlong (3) araw at mapoproseso
+            
+                ang request hanggang limang (5) araw.
+            
+            b. Pagpapaikli ng payment term - Kailangan lamang gumawa ng letter request at magsumite ng bagong tseke.</p>
+            </details>
+          </div>
+
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Gaano katagal ang processing ng Credit Investigation (CI)?</summary>
+              <p class="faq-content">Matapos matanggap ang kumpletong documents at kailangang impormasyon, ang processing ay magtatagal ng 3-5 working days. Maaaring ma-delay ito dahil sa mga sumusunod:
+
+                a.  Hindi available ang buyer sa nasabing schedule ng CI o nagrequest ng reschedule
+                
+                b.  Hindi naayos ang mga kailangan na dokumento para masabing credit worthy ang buyer
+                
+                c.  Hinihintay ang pagbukas ng account at pag-issue ng PDC’s prior sa issuance ng clearance
+                
+                d.  Availability ng top management para sa final approval ng recommendation report</p>
+            </details>
+          </div>
+          
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Kailan maaaring ma-cancel ang aking account?</summary>
+              <p class="faq-content">Ang account ay maaaring makansela base sa mga sumusunod:
+
+                a.  Hindi pagbabayad ng pinakaunang buwanang hulog
+                
+                b.  Hindi pagsumite ng kaukulang post dated checks
+                
+                c.  Hindi pagbabayad ng dalawang (2) magkasunod na buwanang hulog at di
+                
+                     pagtupad sa ipinangakong petsa ng pagbabayad ng arrears
+                
+                d.  Mataaas na antas ng "delinquency" at negative credit profile
+                
+                Kapag nakansela ang account, lahat ng naibayad ay forfeited at hindi na muli makakapagreserve sa anumang proyekto ng Axeia/Basic maliban kung ang clearance ay secured mula sa Credit Management Department.</p>
+            </details>
+          </div>
+
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Paano kumuha ng Clearance for New Reservation?</summary>
+              <p class="faq-content">1.  Gumawa ng request letter with intent for clearance, dahilan kung bakit na-cancel ang unang account, at commitment na makakabayad ka nang tuluy-tuloy kung maaprubahan ang clearance.
+
+                2. Kailangan magsumite ng latest proof of income, valid IDs, proof of billing at recent contact information ng buyer.
+                
+                3. Ito ay magsasailalim ng CI process. Magdedepende sa attending Credit Investigator kung phone o occular CI ang gagawing proseso.
+                
+                4. Kung sakali ito ay maaprubahan, required ang buyer na magbukas at mag-issue muna ng PDC’s bago  ang issuance ng clearance.</p>
+            </details>
+          </div>
+          
+          <div class="space"><br>
+            <details>
+              <summary title="Question" class="ques">Kung under HDMF, kinakailangan bang magsumite ng PDCs para sa M.A.? Maaari bang magbayad direkta sa kanila?</summary>
+              <p class="faq-content">Mahalaga ang PDCs sapagkat ang mga accounts na na-take out na galing sa HDMF ay sa ilalim ng Collection Servicing Agreement. Imo-monitor ng Axeia/BHSI ang monthly amortization payments ng dalawang (2) taon. Sa ika-tatlong (3) taon, maaari nang bayaran ang monthly amortization direkta sa HDMF.</p>
+            </details>
+          </div>
+
+        </details>
+      </div>
+    
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

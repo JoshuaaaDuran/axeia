@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXEIA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .button {
+        padding: 0.8rem 4rem;
+        border: none;
+        outline: none;
+        font-size: 1.3rem;
+        border-radius: 0.3rem;
+        font-weight: 600;
+        background-color: rgba(29, 27, 27, 0.953);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        height: 50px;
+        }
+
+        .button .text {
+        position: absolute;
+        left: 1.6rem;
+        top: -3px;
+        transition: 0.4s ease-in-out;
+        color: rgb(253, 253, 253);
+        background-color: transparent;
+        }
+
+        .svg {
+        transform: translateY(-20px) rotate(30deg);
+        opacity: 0;
+        width: 2rem;
+        transition: 0.4s ease-in-out;
+        }
+
+        .button:hover {
+        background-color: rgb(50, 50, 50);
+        }
+
+        .button:hover .svg {
+        display: inline-block;
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+        }
+
+        .button:hover .text {
+        opacity: 0;
+        }
+
+        .button:active {
+        scale: 0.97;
+        }
+
+.dl-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dl-cont >div {
+  margin-top: 2%;
+  background-color: #ffffff;
+  width: 90%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .dl-cont >div {
+        margin-top: 20%;
+        background-color: #ffffff;
+        width: 98%;
+        height: 100%;
+        }
+    .button {
+        padding: 0.8rem 4rem;
+        border: none;
+        outline: none;
+        font-size: 1.3rem;
+        border-radius: 0.3rem;
+        font-weight: 600;
+        background-color: rgba(29, 27, 27, 0.953);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        height: 50px;
+        width: 50px;
+        }
+
+        .button .text {
+        position: absolute;
+        left: 0.5rem;
+        top: -3px;
+        transition: 0.4s ease-in-out;
+        color: rgb(253, 253, 253);
+        background-color: transparent;
+        }
+        .button:hover .svg {
+        display: inline-block;
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+        }
+        .svg {
+        transform: translateY(-20px) rotate(30deg);
+        opacity: 0;
+        width: 2rem;
+        transition: 0.4s ease-in-out;
+        margin-left: -12px;
+        }
+}
+
+.td-bold{
+  font-weight: bold;
+  width: 20%;
+}
+
+.dl-info{
+  padding: 20px 10px;
+  width: 100%;
+  color: #272525;
+  font-weight: 400;
+}
+
+.dl-cont table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.dl-cont td{
+  border: 1px solid lightgrey;
+  padding: 10px 30px;
+  font-size: 15px;
+}
+td:nth-child(0),
+td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3){
+    border-right:1px solid white;
+    border-left:1px solid white;
+}
+
+
+    </style>
+</head>
+
+<body>
+          <!--===== HEADER =====-->
+          <header class="l-header">
+            <nav>
+                <div class="nav-bar">
+                    <i class='bx bx-menu sidebarOpen' ></i>
+                    <span class="logo navLogo"><a href="#">
+                        <img src="img/logo-frontend-header-small.png" alt="">
+                    </a></span>
+        
+                    <div class="menu">
+                        <div class="logo-toggle">
+                            <span class="logo"><a href="#">
+                                <img src="img/logo-frontend-header-small.png" alt="">
+                            </a></span>
+                            <i class='bx bx-x siderbarClose'></i>
+                        </div>
+        
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="property.html">Property</a></li>
+                            <li><a href="payment.html">Payment</a></li>
+                            <li><a href="download.html">Forms</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="home dl-grid" id="dl">
+            <div class="home__data"><br>
+                <h1 class="home__title">Downloadable Forms <br>
+                </h1>
+            </div>
+    
+        </section>
+
+        <div class="dl-cont">
+            <div class="dl-info">
+                <h2>Download PDF Files</h2>
+                <br>
+                <table>
+                    <tr style="background-color: #e3e6e9; color: #000000;">
+                        <td class="bold">Details</td>
+                        <td class="bold" style="width: 20%;">Download</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Axeia Development Plan</td>
+                        <td>
+                            <a href="img/Site Development Plan - Tanauan Park Place.png" download>
+                                <button class="button">
+                                    <p class="text">
+                                        Download 
+                                    </p>
+                                    <div class="svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-download" viewBox="0 0 16 16">
+                                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
+                                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Axeia Virtual Tour</td>
+                        <td>
+                            <a href="https://storage.net-fs.com/hosting/6136377/14/index.htm?fbclid=IwAR1puzemxljOR8oku82N-sbb3YmgUV5gbGg1fvo-PU7FVtss3qBvElqfpEU" download>
+                                <button class="button">
+                                    <p class="text">
+                                        Download 
+                                    </p>
+                                    <div class="svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-download" viewBox="0 0 16 16">
+                                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
+                                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <br><br><br><br><br><br>
+            </div>
+        </div>
+        
+
+    <script src="main.js"></script>
+
+</body>
+</html>
